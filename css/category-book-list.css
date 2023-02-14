@@ -1,16 +1,30 @@
-#book-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1em;
-  gap: 1em;
-}
+
 
 .book-box {
+  /* font-size: 1.15rem; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: var(--card-background-color);
   padding: 1em;
-  gap: 0.25em;
+  margin:1rem;
+  justify-content: space-around;
+  border-radius: 1rem;
+  height: 15rem;
+
+
+}
+.book-image{
+  flex:50%;
+  position:relative;
+  margin-right: 0.15rem;
+}
+
+
+.book-image img{
+  width: 9.5rem;
+  height:13rem;
+  display: block;
+  border-radius: 10px;
 }
 
 .book-title {
@@ -19,4 +33,20 @@
 
 .book-author {
   font-style: italic;
+}
+
+.category-book-list{
+  flex:85%;
+  /* padding: 1rem; */
+  /* background-color: white; */
+}
+
+
+.eye-button{
+    background: black;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
 }

@@ -36,17 +36,23 @@
           <p>Haven</p>
         </section>
       </section>
-      <section class="search-bar-and-button">
-        <form action="category.html">
-          <input type="text" placeholder="Browse For Books.." class="search-bar" /><br />
-          <input type="submit" class="search-button" value="Search" />
+      <section >
+        <form action="category.html" class="search-bar-and-button">
+         <input type="text" placeholder="Browse For Books......" class="search-bar" >
+         <button type="submit" class="search-button" value="Search">
+          <i  class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        </input>
+         
+          
         </form>
       </section>
-      <section class="header-dropdown-and-cart">
-        <button class="button">cart (0)</button>
-        <button class="button">login</button>
+      <section class="header-buttons">
         <div class="header-dropdown">
-          <button class="button categories-button"><i class="fa-solid fa-caret-down"></i>&nbsp &nbspCategories</button>
+          <button class="categories-button">
+            <p>Categories&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-square-caret-down"></i></p>
+          </button>
+          
           <ul>
             <li><a href="category.html?category=Classics">Classics</a></li>
             <li><a href="category.html?category=Fantasy">Fantasy</a></li>
@@ -54,56 +60,54 @@
             <li><a href="category.html?category=Romance">Romance</a></li>
           </ul>
         </div>
+        <div class="cart">
+          <button class="header-dropdown-and-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <p>Cart</p>
+        </div>
+        <div class="login">
+          <button class="header-dropdown-and-cart">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <p>Vivek&nbsp<i class="fa-solid fa-square-caret-down"></i></p>
+        </div>
+        
+        
+        
       </section>
     </header>
     <div class="home-page">
-      <section class="welcome-text flow-content container dark-background">
-        <h2>Welcome to Another Bookstore</h2>
-        <p>
-          Another Bookstore is a client-side application written in HTML and
-          CSS.
-        </p>
-        <p>
-          It includes a home page and a category page. Both pages have the
-          same header and footer.
-        </p>
-        <p>
-          You can navigate to the category page by choosing any category from
-          the dropdown menu in the header. You can navigate to the home page
-          by clicking on the logo in the header.
-        </p>
-        <p>Take some time and explore the code.</p>
-      </section>
-      <section class="category-images container">
-        <div class="category-image-items">
-          <a>
-            <img src="images/categories/classics.jpg" alt="Classics category" width="180px" height="180px" />
-            <div>Classics</div>
-          </a>
-          <a>
-            <img src="images/categories/fantasy.jpg" alt="Fantasy category" width="180px" height="180px" />
-            <div>Fantasy</div>
-          </a>
-          <a>
-            <img src="images/categories/mystery.jpg" alt="Mystery category" width="180px" height="180px" />
-            <div>Mystery</div>
-          </a>
-          <a>
-            <img src="images/categories/romance.jpg" alt="Romance category" width="180px" height="180px" />
-            <div>Romance</div>
-          </a>
+      <div class="welcome-text flow-content container">
+        <p>Find your next read, from our vast selection of fiction, fantasy, mystery books and more...</p>
+        <button class="button call-to-action">SHOP FOR BOOKS!</button>
+      </div>
+      <div class="author-spotlight welcome-text flow content container">
+        <p>Author Spotlight: <br/>Agatha Christie</p>
+        <div class="books-home">
+          <img class="books-images-home" src="images/books/little-dorrit.gif" alt="Another Bookstore Logo" />
+          <img class="books-images-home" src="images/books/little-dorrit.gif" alt="Another Bookstore Logo" />
+          <img class="books-images-home" src="images/books/little-dorrit.gif" alt="Another Bookstore Logo" />
         </div>
-      </section>
+      </div>
+      
     </div>
+
     <footer class="container">
+      <section class="Copyright">
+        <p><i class="fa-regular fa-copyright"></i> 2023 Shelf Booksellers,Inc.</p>
+      </section>
       <section class="links">
-        <a href="index.html">about</a>
-        <a href="index.html">contact</a>
-        <a href="index.html">directions</a>
+        <a href="index.html">Directions</a>
+        <p>&nbsp|&nbsp</p>
+        <a href="index.html">Contact</a>
+        <p>&nbsp|&nbsp</p>
+        <a href="index.html">About</a>
       </section>
       <section class="social-media-icons">
-        <a class="button">Facebook</a>
-        <a class="button">Twitter</a>
+        <a><i class="fa-brands fa-facebook"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a ><i class="fa-brands fa-twitter"></i></i></a>
       </section>
     </footer>
   </main>

@@ -2,12 +2,12 @@
 <html>
 
 <head>
-  <title>My Bookstore</title>
+  <title>Shelf</title>
   <meta charset="utf-8" />
-  <meta name="description" content="The homepage for My Bookstore" />
+  <meta name="description" content="The category page for Shelf" />
 
   <!-- Import font-awesome icons -->
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a6a7115d18.js" crossorigin="anonymous"></script>
 
   <!-- order of CSS files is important (this is the "Cascade" part of CSS) -->
 
@@ -26,23 +26,33 @@
 <body>
   <main>
     <header class="container">
-      <section class="bookstore-logo">
+      <section class="bookstore-logo-and-title">
         <a href="index.html">
-          <img src="images/site/bookstore-logo.png" alt="Another Bookstore Logo" width="150px" height="auto" />
+          <img src="images/site/logo.png" alt="Another Bookstore Logo" />
         </a>
+        <section class="text-logo">
+          <h1>SHELF</h1>
+          <p>The Book</p>
+          <p>Haven</p>
+        </section>
       </section>
-      <section class="title-and-search-bar">
-        <h1 class="text-logo">Another Bookstore</h1>
-        <form action="category.html">
-          <input type="text" class="search-bar" /><br />
-          <input type="submit" class="button search-button" value="Search" />
+      <section>
+        <form action="category.html" class="search-bar-and-button">
+          <input type="text" placeholder="Browse For Books......" class="search-bar">
+          <button type="submit" class="search-button" value="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          </input>
+
+
         </form>
       </section>
-      <section class="header-dropdown-and-cart">
-        <button class="button">cart (0)</button>
-        <button class="button">login</button>
+      <section class="header-buttons">
         <div class="header-dropdown">
-          <button class="button categories-button">Categories</button>
+          <button class="categories-button">
+            <p>Categories&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-square-caret-down"></i></p>
+          </button>
+
           <ul>
             <li><a href="category.html?category=Classics">Classics</a></li>
             <li><a href="category.html?category=Fantasy">Fantasy</a></li>
@@ -50,85 +60,220 @@
             <li><a href="category.html?category=Romance">Romance</a></li>
           </ul>
         </div>
+        <div class="cart">
+          <button class="header-dropdown-and-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <p>Cart</p>
+        </div>
+        <div class="login">
+          <button class="header-dropdown-and-cart">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <p>Vivek&nbsp<i class="fa-solid fa-square-caret-down"></i></p>
+        </div>
+
+
+
       </section>
     </header>
     <div class="category-page">
-      <nav class="category-nav">
-        <ul class="category-buttons">
-          <li class="button selected-category-button">Classics</li>
-          <li>
-            <a class="button unselected-category-button" href="category.html">Fantasy</a>
-          </li>
-          <li>
-            <a class="button unselected-category-button" href="category.html">Mystery</a>
-          </li>
-          <li>
-            <a class="button unselected-category-button" href="category.html">Romance</a>
-          </li>
-        </ul>
-      </nav>
+
+      <ul class="category-buttons">
+        <li class="category-heading"> Category</li>
+        <li class="button selected-category-button">Classics</li>
+        <li>
+          <a class="button unselected-category-button" href="category.html">Fantasy</a>
+        </li>
+        <li>
+          <a class="button unselected-category-button" href="category.html">Mystery</a>
+        </li>
+        <li>
+          <a class="button unselected-category-button" href="category.html">Romance</a>
+        </li>
+      </ul>
+
       <section class="category-book-list">
-        <ul id="book-boxes">
+        <ul class="book-boxes">
           <li class="book-box">
             <div class="book-image">
-              <a href="#">
+              <a href="#" >
                 <img src="images/books/the-iliad.gif" alt="The Iliad" />
+                <span class="eye-button"><i class="fa-solid fa-eye"></i></span>
               </a>
             </div>
-            <div class="book-title">The Iliad</div>
-            <div class="book-author">Homer</div>
-            <div class="book-price">$6.99</div>
-            <button class="button">Add to Cart</button>
-            <button class="button">Read Now</button>
+            <div class="book-info">
+              <div>
+                <p class="book-title">The Brothers Karamazov</p>
+                <p class="book-author">Fyodor Dostoyevski</p>
+              </div>
+
+
+              <div>
+                <p class="book-price">$13.99</p>
+                <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
+              </div>
+
+
+            </div>
           </li>
           <li class="book-box">
             <div class="book-image">
               <a href="#">
                 <img src="images/books/the-brothers-karamazov.gif" alt="The Brothers Karamazov" />
+                
               </a>
             </div>
-            <div class="book-title">The Brothers Karamazov</div>
-            <div class="book-author">Fyodor Dostoyevski</div>
-            <div class="book-price">$13.99</div>
-            <button class="button">Add to Cart</button>
-            <button class="button">Read Now</button>
+
+
+            <div class="book-info">
+              <div>
+                <p class="book-title">The Brothers Karamazov</p>
+                <p class="book-author">Fyodor Dostoyevski</p>
+              </div>
+
+
+              <div>
+                <p class="book-price">$13.99</p>
+                <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
+              </div>
+
+
+            </div>
           </li>
           <li class="book-box">
             <div class="book-image">
               <a href="#">
                 <img src="images/books/little-dorrit.gif" alt="Little Dorrit" />
+                
               </a>
             </div>
-            <div class="book-title">Little Dorrit</div>
-            <div class="book-author">Charles Dickens</div>
-            <div class="book-price">$5.99</div>
-            <button class="button">Add to Cart</button>
-            <button class="button">Read Now</button>
+            <div class="book-info">
+              <div>
+                <p class="book-title">The Brothers Karamazov</p>
+                <span class="book-author">Fyodor Dostoyevski</span>
+              </div>
+
+
+              <div>
+                <p class="book-price">$13.99</p>
+                <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
+              </div>
+
+
+            </div>
           </li>
           <li class="book-box">
             <div class="book-image">
               <a href="#">
                 <img src="images/books/moby-dick.gif" alt="Moby Dick" />
+                
               </a>
             </div>
-            <div class="book-title">Moby Dick</div>
-            <div class="book-author">Herman Melville</div>
-            <div class="book-price">$6.99</div>
-            <button class="button">Add to Cart</button>
-            <button class="button">Read Now</button>
+            <div class="book-info">
+              <div>
+                <p class="book-title">The Brothers Karamazov</p>
+                <p class="book-author">Fyodor Dostoyevski</p>
+              </div>
+
+
+              <div>
+                <p class="book-price">$13.99</p>
+                <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li class="book-box">
+            <div class="book-image">
+              <a href="#">
+                <img src="images/books/moby-dick.gif" alt="Moby Dick" />
+                <span class="eye-button"><i class="fa-solid fa-eye"></i></span> 
+                
+              </a>
+            </div>
+            <div class="book-info">
+              <div>
+                <p class="book-title">The Brothers Karamazov</p>
+                <p class="book-author">Fyodor Dostoyevski</p>
+              </div>
+
+
+              <div>
+                <p class="book-price">$13.99</p>
+                <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li class="book-box">
+            <div class="book-image">
+              <a href="#">
+                <img src="images/books/moby-dick.gif" alt="Moby Dick" />
+                <span class="eye-button"><i class="fa-solid fa-eye"></i></span> 
+                
+              </a>
+            </div>
+            <div class="book-info">
+              <div>
+                <p class="book-title">The Brothers Karamazov</p>
+                <p class="book-author">Fyodor Dostoyevski</p>
+              </div>
+
+
+              <div>
+                <p class="book-price">$13.99</p>
+                <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li class="book-box">
+            <div class="book-image">
+              <a href="#">
+                <img src="images/books/moby-dick.gif" alt="Moby Dick" />
+                
+              </a>
+            </div>
+            <div class="book-info">
+              <div>
+                <p class="book-title">The Brothers Karamazov</p>
+                <p class="book-author">Fyodor Dostoyevski</p>
+              </div>
+
+
+              <div>
+                <p class="book-price">$13.99</p>
+                <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
+              </div>
+
+
+            </div>
           </li>
         </ul>
       </section>
     </div>
     <footer class="container">
+      <section class="Copyright">
+        <p><i class="fa-regular fa-copyright"></i> 2023 Shelf Booksellers,Inc.</p>
+      </section>
       <section class="links">
-        <a href="index.html">about</a>
-        <a href="index.html">contact</a>
-        <a href="index.html">directions</a>
+        <a href="index.html">Directions</a>
+        <p>&nbsp|&nbsp</p>
+        <a href="index.html">Contact</a>
+        <p>&nbsp|&nbsp</p>
+        <a href="index.html">About</a>
       </section>
       <section class="social-media-icons">
-        <a class="button" href="index.html">Facebook</a>
-        <a class="button" href="index.html">Twitter</a>
+        <a><i class="fa-brands fa-facebook"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a><i class="fa-brands fa-twitter"></i></i></a>
       </section>
     </footer>
   </main>

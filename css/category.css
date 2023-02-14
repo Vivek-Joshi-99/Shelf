@@ -1,20 +1,62 @@
-.category-buttons {
+.category-page {
   display: flex;
   flex-direction: row;
-  text-align: center;
-  background-color: var(--neutral-color);
+  flex-grow: 3;
 }
 
+.category-buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 15%;
+  font-size: 1.5rem;
+  background-color: var(--secondary-color);
+}
+
+.book-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: auto;
+  height: 83vh;
+}
+
+
 .button.selected-category-button {
-  background-color: var(--primary-color);
+  background-color: white;
+  color: black;
 }
 
 .button.unselected-category-button,
 .button.unselected-category-button:visited {
-  background-color: var(--neutral-color);
+  background-color: var(--secondary-color);
+  color: black;
 }
 
 .button.unselected-category-button:hover,
 .button.unselected-category-button:active {
   background-color: var(--primary-color);
+  color: black;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  justify-content: space-between;
+}
+
+.book-price {
+  color: green;
+}
+
+.button-book {
+  border-radius: 8px;
+}
+
+.category-heading {
+  background-color: var(--default-text-color);
+  color: white;
+  padding: 0.75rem;
+  font-size: 2rem;
 }

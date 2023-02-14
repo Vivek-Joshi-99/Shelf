@@ -1,16 +1,29 @@
 footer {
-  background: var(--secondary-background-color);
+  background: var(--default-text-color);
   display: flex;
   gap: 1em;
+  color: white;
+  font-family: var(--title-font-family);
+  justify-content: space-between;
 }
 
 .links,
 .social-media-icons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  color: white;
+}
+.links{
+  justify-content: center;
+
 }
 
 .social-media-icons {
-  text-align: center;
+  align-self: right;
   gap: 0.25em;
+  justify-content: flex-end;
+}
+
+footer > section {
+  flex-basis: 30%;
 }
