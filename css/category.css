@@ -25,18 +25,20 @@
 .button.selected-category-button {
   background-color: white;
   color: black;
+  border-radius: 20px;
 }
 
 .button.unselected-category-button,
 .button.unselected-category-button:visited {
   background-color: var(--secondary-color);
   color: black;
+  min-width:auto;
 }
 
 .button.unselected-category-button:hover,
 .button.unselected-category-button:active {
-  background-color: var(--primary-color);
-  color: black;
+  background-color: var(--secondary-color);
+  color: wheat;
 }
 
 .book-info {
@@ -46,13 +48,6 @@
   justify-content: space-between;
 }
 
-.book-price {
-  color: green;
-}
-
-.button-book {
-  border-radius: 8px;
-}
 
 .category-heading {
   background-color: var(--default-text-color);

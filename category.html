@@ -36,15 +36,15 @@
           <p>Haven</p>
         </section>
       </section>
-      <section>
+      <section >
         <form action="category.html" class="search-bar-and-button">
-          <input type="text" placeholder="Browse For Books......" class="search-bar">
-          <button type="submit" class="search-button" value="Search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          </input>
-
-
+         <input type="text" placeholder="Browse For Books......" class="search-bar" >
+         <button type="submit" class="search-button" value="Search">
+          <i  class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        </input>
+         
+          
         </form>
       </section>
       <section class="header-buttons">
@@ -52,7 +52,7 @@
           <button class="categories-button">
             <p>Categories&nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-square-caret-down"></i></p>
           </button>
-
+          
           <ul>
             <li><a href="category.html?category=Classics">Classics</a></li>
             <li><a href="category.html?category=Fantasy">Fantasy</a></li>
@@ -65,6 +65,7 @@
             <i class="fa-solid fa-cart-shopping"></i>
           </button>
           <p>Cart</p>
+          <div class="cart-count">2</div>
         </div>
         <div class="login">
           <button class="header-dropdown-and-cart">
@@ -72,15 +73,20 @@
           </button>
           <p>Vivek&nbsp<i class="fa-solid fa-square-caret-down"></i></p>
         </div>
-
-
-
+        
+        
+        
       </section>
     </header>
     <div class="category-page">
 
       <ul class="category-buttons">
+        
+        <li>
         <li class="category-heading"> Category</li>
+        <li>
+          <a class="button unselected-category-button" href="category.html">Drama</a>
+        </li>
         <li class="button selected-category-button">Classics</li>
         <li>
           <a class="button unselected-category-button" href="category.html">Fantasy</a>
@@ -91,6 +97,12 @@
         <li>
           <a class="button unselected-category-button" href="category.html">Romance</a>
         </li>
+        <li>
+          <a class="button unselected-category-button" href="category.html">Non-Fiction</a>
+        </li>
+        <li>
+          <a class="button unselected-category-button" href="category.html">Young Adult</a>
+        </li>
       </ul>
 
       <section class="category-book-list">
@@ -98,19 +110,19 @@
           <li class="book-box">
             <div class="book-image">
               <a href="#" >
-                <img src="images/books/the-iliad.gif" alt="The Iliad" />
+                <img src="images/books/cb1.gif" alt="And Then There Were None" />
                 <span class="eye-button"><i class="fa-solid fa-eye"></i></span>
               </a>
             </div>
             <div class="book-info">
-              <div>
-                <p class="book-title">The Brothers Karamazov</p>
-                <p class="book-author">Fyodor Dostoyevski</p>
+              <div class="book-title-and-author">
+                <p class="book-title">And Then There Were None</p>
+                <p class="book-author">Agatha Christie</p>
               </div>
 
 
               <div>
-                <p class="book-price">$13.99</p>
+                <p class="book-price">$9.99</p>
                 <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
               </div>
 
@@ -120,7 +132,7 @@
           <li class="book-box">
             <div class="book-image">
               <a href="#">
-                <img src="images/books/the-brothers-karamazov.gif" alt="The Brothers Karamazov" />
+                <img src="images/books/cb2.gif" alt="1984" />
                 
               </a>
             </div>
@@ -128,13 +140,13 @@
 
             <div class="book-info">
               <div>
-                <p class="book-title">The Brothers Karamazov</p>
-                <p class="book-author">Fyodor Dostoyevski</p>
+                <p class="book-title">1984</p>
+                <p class="book-author">George Orwell</p>
               </div>
 
 
               <div>
-                <p class="book-price">$13.99</p>
+                <p class="book-price">$4.49</p>
                 <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
               </div>
 
@@ -144,19 +156,19 @@
           <li class="book-box">
             <div class="book-image">
               <a href="#">
-                <img src="images/books/little-dorrit.gif" alt="Little Dorrit" />
+                <img src="images/books/cb3.gif" alt="Pride and Prejudice" />
                 
               </a>
             </div>
             <div class="book-info">
               <div>
-                <p class="book-title">The Brothers Karamazov</p>
-                <span class="book-author">Fyodor Dostoyevski</span>
+                <p class="book-title">Pride and Prejudice</p>
+                <span class="book-author">Jane Austen</span>
               </div>
 
 
               <div>
-                <p class="book-price">$13.99</p>
+                <p class="book-price">$7.99</p>
                 <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
               </div>
 
@@ -166,19 +178,19 @@
           <li class="book-box">
             <div class="book-image">
               <a href="#">
-                <img src="images/books/moby-dick.gif" alt="Moby Dick" />
+                <img src="images/books/cb4.gif" alt="8 Rules of Love" />
                 
               </a>
             </div>
             <div class="book-info">
               <div>
-                <p class="book-title">The Brothers Karamazov</p>
-                <p class="book-author">Fyodor Dostoyevski</p>
+                <p class="book-title">8 Rules of Love</p>
+                <p class="book-author">Jay Shetty</p>
               </div>
 
 
               <div>
-                <p class="book-price">$13.99</p>
+                <p class="book-price">$5.99</p>
                 <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
               </div>
 
@@ -189,15 +201,15 @@
           <li class="book-box">
             <div class="book-image">
               <a href="#">
-                <img src="images/books/moby-dick.gif" alt="Moby Dick" />
+                <img src="images/books/cb5.gif" alt="It Starts With Us" />
                 <span class="eye-button"><i class="fa-solid fa-eye"></i></span> 
                 
               </a>
             </div>
             <div class="book-info">
               <div>
-                <p class="book-title">The Brothers Karamazov</p>
-                <p class="book-author">Fyodor Dostoyevski</p>
+                <p class="book-title">It Starts With Us</p>
+                <p class="book-author">Colleen Hoover</p>
               </div>
 
 
@@ -213,20 +225,20 @@
           <li class="book-box">
             <div class="book-image">
               <a href="#">
-                <img src="images/books/moby-dick.gif" alt="Moby Dick" />
+                <img src="images/books/cb6.gif" alt="A Man Caled Ove" />
                 <span class="eye-button"><i class="fa-solid fa-eye"></i></span> 
                 
               </a>
             </div>
             <div class="book-info">
               <div>
-                <p class="book-title">The Brothers Karamazov</p>
-                <p class="book-author">Fyodor Dostoyevski</p>
+                <p class="book-title">A Man Caled Ove</p>
+                <p class="book-author">Fredrick Backman</p>
               </div>
 
 
               <div>
-                <p class="book-price">$13.99</p>
+                <p class="book-price">$14.99</p>
                 <button class="button-book button"><i class="fa-solid fa-cart-shopping"></i>&nbspAdd to Cart</button>
               </div>
 
@@ -234,7 +246,7 @@
             </div>
           </li>
 
-          <li class="book-box">
+          <!-- <li class="book-box">
             <div class="book-image">
               <a href="#">
                 <img src="images/books/moby-dick.gif" alt="Moby Dick" />
@@ -255,7 +267,7 @@
 
 
             </div>
-          </li>
+          </li> -->
         </ul>
       </section>
     </div>
