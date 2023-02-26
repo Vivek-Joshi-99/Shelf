@@ -6,18 +6,30 @@ const categoryList = inject("categoryList") as CategoryItem[];
 
 <style scoped>
 .header-dropdown {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.categories-button {
+.categories-button , .categories-button:hover {
+  background-color: var(--secondary-color);
   margin-top: 0.25em;
-  background-color: var(--primary-color-dark);
+  
+  border-color: var(--default-text-color);
+  color: var(--default-text-color);
+  /* padding: 1px 1px; */
+  border-radius: 20rem;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  min-width: max-content;
 }
+
+
 
 .header-dropdown ul {
-  display: none;
   background-color: white;
   color: black;
+  display: none;
+  border-radius: 1rem;
 }
 
 .header-dropdown li {
@@ -30,22 +42,28 @@ const categoryList = inject("categoryList") as CategoryItem[];
 }
 
 .header-dropdown li:hover {
-  background: lightgray;
+  background: var(--default-text-color);
+  border-radius: 1rem;
+}
+
+.header-dropdown li:hover a{
+  color: white;
 }
 
 .header-dropdown:hover ul {
-  position: absolute;
-  z-index: 1;
   display: block;
-  min-width: 8em;
+  min-width: inherit;
+  padding: inherit;
+  margin:inherit;
+  z-index: 1;
   cursor: pointer;
 }
 </style>
 
 <template>
   <div class="header-dropdown">
-    <button class="button categories-button">Categories</button>
-    <ul>
+    <button class="categories-button">Categories &nbsp;<i class="fa-solid fa-square-caret-down"></i></button>
+    <ul class="category-dropdown">
       <li v-for="category in categoryList" :key="category.categoryId">
         <router-link :to="'/category/' + category.name">
           {{ category.name }}

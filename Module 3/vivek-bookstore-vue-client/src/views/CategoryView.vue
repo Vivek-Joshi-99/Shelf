@@ -8,10 +8,16 @@ const bookList = sourceData.books as BookItem[];
 provide("bookList", bookList);
 </script>
 
-<style scoped></style>
+<style scoped>
+.category-view{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+}
+</style>
 
 <template>
-  <div>
+  <div class="category-view">
     <the-category-nav></the-category-nav>
     <the-category-book-list :bookList="bookList"> </the-category-book-list>
   </div>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { inject } from "vue";
-import type { CategoryItem } from "@/types";
+import type { CategoryItem } from "../types";
 const categoryList = inject("categoryList") as CategoryItem[];
 const categoryImageFileName = function (category: CategoryItem): string {
   let name = category.name.toLowerCase();

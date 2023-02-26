@@ -11,7 +11,7 @@ provide("categoryList", categoryList);
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" class="main">
     <the-header></the-header>
     <router-view :key="route.fullPath"></router-view>
     <the-footer></the-footer>
